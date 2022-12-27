@@ -37,3 +37,59 @@
 // }
 //
 // console.log(findMissingLetter(['a','b','c','d','f']))
+
+
+// -------------------------------- 3 ----------------------------------
+
+//   Вы, наверное, знаете систему «лайков» по Facebook и другим страницам.
+//   Люди могут "лайкать" сообщения в блогах,изображения или другие предметы.
+//   Мы хотим создать текст, который должен отображаться рядом с таким элементом.
+//   Реализуйте функцию likes :: [String] -> String, которая
+//   должна принимать входной массив, содержащий имена людей,которым нравится элемент.
+//   Он должен возвращать отображаемый текст, как показано в примерах:
+//
+//   Например:
+//       likes([]) --> 'no one likes this'
+//       likes(['Peter']) --> 'Peter likes this'
+//       likes(['Jacob', 'Alex']) --> 'Jacob and Alex like this'
+//       likes(['Max', 'John', 'Mark']) --> 'Max, John and Mark like this')
+//       likes(['Alex', 'Jacob', 'Mark', 'Max']) --> 'Alex, Jacob and 2 others like this'
+
+// const likes = (arr) => {
+//   let result = '';
+//
+//   if (arr.length === 1) {
+//     result += arr[0] + ' likes this';
+//   } else if (arr.length === 2) {
+//     result = `${arr[0]} and ${arr[1]} likes this`;
+//   } else if(arr.length === 3) {
+//     let last = arr.pop();
+//
+//     arr.forEach((item, i) => {
+//       if (arr.length === (i + 1)) {
+//         result += item;
+//       } else {
+//         result += `${item}, `;
+//       }
+//     })
+//
+//     result += ` and ${last} likes this`;
+//
+//   } else if (arr.length > 3) {
+//     result = `${arr[0]}, ${arr[1]} and ${arr.length - 2} others like this`;
+//   } else {
+//     result += 'no one likes this';
+//   }
+//
+//   return result;
+// }
+//
+// console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']));
+
+
+
+
+
+
+
+
