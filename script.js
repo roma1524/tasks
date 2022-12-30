@@ -87,9 +87,41 @@
 // console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']));
 
 
+// -------------------------------- 4 ----------------------------------
+
+// Что такое анаграмма?
+//
+// Два слова являются анаграммами между собой,если
+// они оба содержат одинаковые буквы.
+//
+// Например: 'abba' & 'baab' == true
+//
+// Напишите функцию, которая находит все анаграммы слова из списка.
+// В качестве параметра даны слово и массив слов.
+// Функция должна возвращать массив всех анаграмм или пустой массив,
+// если анаграмм не обнаружено.
+//
+// Например:
+// anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) --> ['aabb', 'bbaa'];
 
 
-
+// function sortMyWord(arg) {
+//   return arg.split('').sort().join('');
+// }
+//
+// const anagrams = (word, arr) => {
+//   let mainWord = sortMyWord(word), result = [];
+//
+//   arr.forEach(item => {
+//     if (sortMyWord(item) === mainWord) {
+//       result.push(item);
+//     }
+//   });
+//
+//   return result;
+// }
+//
+// console.log(anagrams('az', ['av', 'za', 'zd', 'rz', 'az', 'aza']));
 
 
 
