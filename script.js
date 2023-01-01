@@ -178,3 +178,23 @@
 // }
 //
 // console.log(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
+
+
+// -------------------------------- 7 ----------------------------------
+
+  // Ваша задача написать функцию, которая принимает
+  // в качестве параметра целое число и возводит в квадрат каждую цифру числа.
+  // Результат также необходимо вернуть в виде целого числа.
+  //
+  // Например:
+  // squareDigits(9119) --> 811181
+
+// const squareDigits = (num) => {
+//   let result = '';
+//
+//   String(num).split('').forEach(item => result += item * item)
+//
+//   return +result;
+// }
+//
+// console.log(squareDigits(9119));
