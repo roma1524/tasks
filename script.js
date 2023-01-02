@@ -222,3 +222,28 @@
 // }
 //
 // console.log(maskify("4556364607935616"));
+
+
+// -------------------------------- 9 ----------------------------------
+
+// Дан массив слов, необходимо определить,
+// составлены ли все слова из одних и тех же символов.
+//
+// Например:
+// ["кот", "ток", "кто"] --> true
+// ["кот", "тк", "кТо"] --> false
+
+// function mySort(arg){
+//   return arg.split('').sort().join('');
+// }
+//
+// const myArr = (arr) => {
+//   let pl = mySort(arr[0]), markT = 0, markF = 0;
+//
+//   arr.forEach(item => {
+//     pl === mySort(item) ? markT += 1 : markF += 1;
+//   })
+//   return markF ? false : true;
+// }
+//
+// console.log(myArr(["кот", "ток", "кто"]))
