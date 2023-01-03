@@ -357,3 +357,26 @@ console.log(f12([1, [2, [3, [4]]]]))
 // }
 //
 // console.log(removeDuplicates(arrR))
+
+
+// -------------------------------- 15 ----------------------------------
+
+// Напишите функцию colonOdd(num), которая принимает число num в
+// качестве аргумента и вставляет двоеточие (:) между двумя нечетными числами.
+// Например, если вводится число 55639217, то на выходе должно быть 5:563:921:7
+
+// const colonOdd = (num) => {
+//   let arrayC = String(num).split(''), result = [];
+//
+//   arrayC.map((item, index) => {
+//
+//     if (item % 2 !== 0 && arrayC[index + 1] % 2 !== 0 && index !== (arrayC.length - 1)) {
+//       result.push(`${item}:`)
+//     } else {
+//       result.push(item);
+//     }
+//   });
+//   return result.join('');
+// }
+//
+// console.log(colonOdd(55639217));
